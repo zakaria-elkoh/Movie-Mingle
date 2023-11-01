@@ -1,0 +1,25 @@
+.side-content {
+    gap: 6em;
+}
+
+.nav {
+    gap: 30px;
+}
+
+.nav li a:hover {
+    background-color: #f5c5181b;
+    padding: 10px 15px;
+    border-radius: 1em;
+}
+
+.side-content {
+    background-color: black;
+    background-image: linear-gradient(black, #f5c51880);
+    margin: 3px;
+    border-radius: 1em;
+}
+
+.side-content span {
+    color: white;
+    font-size: 1em;
+}
