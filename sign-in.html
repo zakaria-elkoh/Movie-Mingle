@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/sign-in.css">
+
+    <script src="./js/sign-in.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <section class="sign-in">
+        <div class="container d-flex">
+            <div class="signin-options">
+                <div class="col-8">
+                    <h1 class="text-center fw-bold">Sign in</h1>
+                    <div class="sign-in-items">
+                        <a href="#"  class="sign-in-item d-flex align-items-center">
+                            <span class="sign-in-icons item-logo MovieMingle-logo"></span>
+                            <span class="signin-item-text">Sign in with MovieMingle</span>
+                        </a>
+
+                        <a href="#" class="sign-in-item d-flex align-items-center">
+                            <span class="sign-in-icons item-logo amazon-logo"></span>
+                            <span class="signin-item-text">Sign in with Amazon</span>
+                        </a>
+
+                        <a href="#" class="sign-in-item d-flex align-items-center">
+                            <span class="sign-in-icons item-logo google-logo"></span>
+                            <span class="signin-item-text">Sign in with Google</span>
+                        </a>
+
+                        <a href="#" class="sign-in-item d-flex align-items-center">
+                            <span class="sign-in-icons item-logo apple-logo"></span>
+                            <span class="signin-item-text">Sign in with Apple</span>
+                        </a>
+                        <div id="hiddenOptionToggle" class="item-option-toggle">
+                            <span>Show more options</span>
+                        </div>
+                        <div id="hiddenItemOptionContainer" class="hidden-item-container hidden d-none">
+                            <a href="#" class="sign-in-item d-flex align-items-center">
+                                <span class="sign-in-icons item-logo facebook-logo"></span>
+                                <span class="signin-item-text">Sign in with Facebook</span>
+                            </a>
+                        </div>
+                        <div class="divider-text">
+                            <span>or</span>
+                        </div>
+                        <div class="create-account-container">
+                            <a href="#" class="create-account fw-bold">Create a New Account</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="signin-notice ">
+                    <p class="text-center">
+                        <small>By signing in, you agree to MovieMingle's <a href="/conditions">Conditions of Use</a><br>  and <a href="/privacy">Privacy Policy.</a></small>
+                    </p>
+                </div>
+            </div>
+            <div class="signin-perks">
+                <h2 class="benfits-title">Benefits of your free  MovieMingle account</h2>
+                <div class="benifits-content">
+                    <h3 class="benfits-subtitle">Personalized Recommendations</h3>
+                    <p class="benifits-description">Discover shows you'll love.</p>
+                </div>
+
+                <div class="benifits-content">
+                    <h3 class="benfits-subtitle">Your Watchlist</h3>
+                    <p class="benifits-description">
+                        Track everything you want to watch and receive e-mail when 
+                        movies open in theaters.
+                    </p>
+                </div>
+
+                <div class="benifits-content">
+                    <h3 class="benfits-subtitle" >Your Ratings</h3>
+                    <p class="benifits-description">Rate and remember everything you've seen.</p>
+                </div>
+
+                <div class="benifit-content">
+                    <h3 class="benfits-subtitle">Contribute to MovieMingle</h3>
+                    <p class="benifits-description">
+                        Add data that will be seen by millions of people and get cool 
+                        badges.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
