@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    /* background-color: #000; */
+    line-height: 1.5;
+}
+p {
+    /* color: #bababa; */
+}
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* ========================= start the hero section  ========================= */
+.hero {
+    min-height: calc(100vh - 75px);
+}
+.hero .slider {
+    min-height: 540px;
+}
+.hero .up-coming-movies div {
+    height: 27%;
+}
