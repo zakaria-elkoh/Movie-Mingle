@@ -19,6 +19,7 @@ a{
 }
 .signin-options{
     padding-left: 100px;
+    width: 500px;
 }
 .signin-options div h1{
     font-size: 31px;
@@ -40,8 +41,17 @@ a{
     margin-right: 5px;
 }
 .sign-in-icons.item-logo{
-    background: url('/Contact-images/Logos.png') no-repeat;
+    background: url('/Contact-images/logos.png') no-repeat;
     background-size: 32px, 96px;
+}
+.sign-in-icons.MovieMingle-logo{
+    background: url('/Contact-images/Logo.png') no-repeat;
+    background-color: #000;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    margin-inline: 8px 10px;
 }
 .sign-in-icons.amazon-logo{
     background-position: 0 -24px;
@@ -127,4 +137,28 @@ a{
     font-size: 21px;
     font-weight: bold;
     color: #333333;
+}
+#signin-notice{
+    margin-left: -80px;
+}
+
+@media only screen and (max-width: 768px){
+    .sign-in{
+        background-color: #fff;
+    }
+    .sign-in .container{
+        width: 80%;
+    }
+    .signin-options{
+        padding-left: 0;
+        margin: auto;
+    } 
+    .signin-perks{
+        display: none;
+    }
+    #signin-notice{
+        margin-top: 20px;
+        margin-left: -12px;
+        font-size: 14px;
+    }
 }
