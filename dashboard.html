@@ -20,26 +20,74 @@
 </head>
 
 <body class="container bg-black">
-    <section class="side-bar container-fluid">
+    <section class="container">
         <div class="row flex-nowrap">
-            <div class="side-content d-flex flex-column align-items-center py-5 col-auto col-md-3 min-vh-100">
+            <div class="side-content d-flex flex-column align-items-center py-5 m-1 col-auto col-md-3 min-vh-100">
                 <div class="profil d-flex flex-column align-items-center gap-3">
                     <img src="img/user.png" alt="">
                     <span class="d-none d-md-inline">user name</span>
                 </div>
                 <ul class="nav d-flex flex-column">
-                    <li><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-border-all"></i> <span class="d-none d-md-inline">Dashboard</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white"><i class="fa-regular fa-heart"></i> <span class="d-none d-md-inline">Favorite</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white"><i class="fa-regular fa-bookmark"></i> <span class="d-none d-md-inline">To-watch</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white"><i class="fa-regular fa-compass"></i> <span class="d-none d-md-inline">Watch-history</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white"><i class="fa-regular fa-user"></i> <span class="d-none d-md-inline">Account</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-arrow-right-from-bracket"></i> <span class="d-none d-md-inline">Log out</span></a></li>
+                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                class=" fa-solid fa-border-all"></i>
+                            <span class="d-none d-md-inline">Dashboard</span></a></li>
+                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                class=" fa-regular fa-heart"></i> <span class="d-none d-md-inline">Favorite</span></a>
+                    </li>
+                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                class=" fa-regular fa-bookmark"></i>
+                            <span class="d-none d-md-inline ">To-watch</span></a></li>
+                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                class=" fa-regular fa-compass"></i> <span
+                                class="d-none d-md-inline">Watch-history</span></a></li>
+                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                class=" fa-regular fa-user"></i> <span class="d-none d-md-inline">Account</span></a>
+                    </li>
+                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                class=" fa-solid fa-arrow-right-from-bracket"></i> <span class="d-none d-md-inline">Log
+                                out</span></a></li>
                 </ul>
             </div>
+            <!-- content -->
+            <div class="content m-1 col-md-9 min-vh-100">
 
-        </div>
+                <div class="p-2 rounded m-4 d-flex flex-column gap-5">
 
+                    <h1 class="title fs-5">Most Watched-genre</h1>
+                    <div class="row p-2 d-flex flex-wrap">
+                        <div class="col-lg-3">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="col-lg-3">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                        <div class="col-lg-3">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <div class="col-lg-3">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="row p-2 rounded m-4 d-flex flex-wrap">
+                        <div class="col-6">
+                            <canvas id="lineChart"></canvas>
+                        </div>
+                        <div class="col-6">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"
+        integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
