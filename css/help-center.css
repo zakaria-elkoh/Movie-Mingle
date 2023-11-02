@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    padding: 25px 0 40px;
+    background-color: #090909;
+}
+nav{
+    width: 77.77%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.logo-image{
+    width: 100%;
+}
+.search-container{
+    flex-basis: 60%;
+    display: flex;
+    height: 140px;
+}
+.search-content{
+    flex-basis: 100%;
+    flex-direction: column;
+    align-self: flex-end;
+}
+.search-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+#search-form{
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+}
+.form-input{
+    width: 90%;
+    border: none;
+    font-size: 16px;
+    background: none;
+    margin-left: 10px;
+    padding-inline: 10px;
+    outline: none;
+    border-left: 2px solid #090909;
+}
+.button{
+    display: inline-flex;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.first-btn{
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 10px;
+}
+.second-btn{
+    background-color: #F5C518;
+    color: #000;
+}
+.signin-guide{
+    padding: 30px 11% 50px;
+    border-bottom: 2px solid #D9D9D9;
+}
+.guide-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.signin-guide a:nth-child(2){
+    background-color: #090909;
+    margin-left: 5px;
+    margin-bottom: 60px;
+}
+.topic-item{
+    display: flex;
+    padding: 5px 10px;
+    margin-right: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.topic-image{
+    width: 20px;
+    height: 20px;
+}
+.topic-description{
+    margin-bottom: 0;
+}
+.topics-categories{
+    padding: 50px 11% 50px;
+}
+.category-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.category-link{
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #090909;
+}

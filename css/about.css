@@ -1,0 +1,121 @@
+
+  #row1 {
+    background: url(../img-about/noom-peerapong-2uwFEAGUm6E-unsplash.jpg);
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    opacity: 0.8;
+    /* backdrop-filter: blur(10px);  */
+}
+#section{
+    border-radius: 10px;
+}
+.img{
+    border-radius: 360px;
+}
+  .w-80{
+      width: 80%;
+  
+  }
+   .accordion {
+    max-width: 1000px;
+  } 
+  .accordion-item {
+    border-radius: 0.5rem;
+    border: none;
+  }
+  .p-6{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+  }
+  .accordion-item-header {
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+     display: flex; 
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+    /* max-height: 300px; */
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+  }
+  .hr{
+    width: 100%;
+    height: 5px;
+    background-color: #F5C518;
+
+  }
+  
+  .w-30{
+    width: 35%;
+
+}
+.w-10{
+  width: 10%;
+
+}
+  
+.source {
+  /* margin-top: 10px; */
+  /* margin-bottom: 20px; */
+  margin-inline:auto ;
+  overflow: hidden;
+  display: flex;
+  padding: 0px 0 ;
+  white-space: nowrap;
+  padding: 50px;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+  
+}
+.source-slider{
+  padding-right: 1100px;
+  display:flex;
+  animation: 15s slide infinite linear;
+}
+
+.source-slider img{
+  margin: 0 40px;
+  width: 20%; 
+  padding: 10px;
+  transition: 0.3s;
+  border-radius: 10px; 
+}
+.source:hover .source-slider{
+  animation-play-state: paused;
+}
+  
+  @media (max-width: 767px) {
+    html {
+      font-size: 14px;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    #row2{
+      display: none;
+    }
+  }
