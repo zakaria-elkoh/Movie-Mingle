@@ -24,6 +24,9 @@
     border-radius: 0.5rem;
     border: none;
   }
+  .accordion-item-header:hover{
+    background-color: rgb(112, 112, 112);
+  }
   .p-6{
     padding: 0.5rem 3rem 0.5rem 1rem;
   }
@@ -55,6 +58,9 @@
     line-height: 1.5rem;
     border-top: 1px solid;
   }
+  .question{
+    flex-wrap:wrap ;
+  }
   .hr{
     width: 100%;
     height: 5px;
@@ -69,17 +75,15 @@
 .w-10{
   width: 10%;
 
-}
-  
+}  
 .source {
-  /* margin-top: 10px; */
-  /* margin-bottom: 20px; */
   margin-inline:auto ;
   overflow: hidden;
   display: flex;
   padding: 0px 0 ;
   white-space: nowrap;
-  padding: 50px;
+  cursor: pointer;
+  
 }
 
 @keyframes slide {
@@ -109,12 +113,11 @@
 }
   
   @media (max-width: 767px) {
-    html {
-      font-size: 14px;
-    }
     p{
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
+  }
+  @media (max-width: 1000px) {
     #row2{
       display: none;
     }
