@@ -41,6 +41,8 @@
 .slider {
     height: 300px;
   background: url(../img/Oppenheimer.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   animation: slide 30s infinite;
 }
 @keyframes slide {
