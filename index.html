@@ -7,7 +7,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <!-- main style -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    main style -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -119,9 +120,9 @@
         </button>
     </div> -->
 
-    <section class="hero bg-dark py-5">
+    <section class="hero py-4">
         <div class="container row mx-auto">
-            <div class="slider bg-warning col-lg-7 py-3">
+            <div class="slider bg-warning col-xl-7 p-0">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -132,26 +133,402 @@
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon swip-btn" aria-hidden="true"></span>
+                    <!-- <span class="visually-hidden">Previous</span> -->
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon swip-btn" aria-hidden="true"></span>
+                    <!-- <span class="visually-hidden">Next</span> -->
                     </button>
                 </div>
             </div>
-            <div class="bg-danger col-5 up-coming-movies d-none d-lg-block">
-                <h2 class="mt-2">Up next</h2>
-                <div class="bg-primary">1</div>
-                <div class="bg-warning my-2">2</div>
-                <div class="bg-primary">3</div>
+            <div class="bg-danger col-5 up-coming-movies d-none d-xl-block p-2">
+                <h3 class="main-clr">Up next</h3>
+
+                <div class="bg-primary d-flex">
+                    <img src="./imgs/casaDePapel.png" class="h-100" alt="img">
+                    <div class=" p-2 ps-3">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="bg-primary d-flex my-2">
+                    <img src="./imgs/casaDePapel.png" class="h-100" alt="img">
+                    <div class=" p-2 ps-3">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-primary d-flex">
+                    <img src="./imgs/casaDePapel.png" class="h-100" alt="img">
+                    <div class=" p-2 ps-3">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <section class="fearures py-5">
+        <div class="container">
+            <div class="main-heading">
+                <h1>Featured today</h1>
+            </div>
+        </div>
+        <div id="carouselExamples" class="carousel slide mt-4 container">
+            <div class="carousel-inner container">
+                <!-- 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <div class="w-33">
+                            <div class="d-flex gap-1 bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-2.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">Weekend Picks: 'Cukur', 'Past Lives', and More</p>
+                        </div>
+                        <div class="w-33 mx-3">
+                            <div class="d-flex gap-1 bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/top-new-3.jpg" alt="img">
+                                <img class="w-33 flex-grow-1 mx-" src="/imgs/top-new-2.jpg" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/top-new-4.jpg" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">'Ligo', 'Ice Age', 'Shrek', and More</p>
+                        </div>
+                        <div class="w-33">
+                            <div class="d-flex bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                <img class="w-33 flex-grow-1 mx-1" src="/imgs/movie-2.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">Best 3 of picks in October</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="w-33">
+                            <div class="d-flex gap-1 bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-2.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">Weekend Picks: 'Cukur', 'Past Lives', and More</p>
+                        </div>
+                        <div class="w-33 mx-3">
+                            <div class="d-flex gap-1 bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/top-new-3.jpg" alt="img">
+                                <img class="w-33 flex-grow-1 mx-" src="/imgs/top-new-2.jpg" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/top-new-4.jpg" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">'Ligo', 'Ice Age', 'Shrek', and More</p>
+                        </div>
+                        <div class="w-33">
+                            <div class="d-flex bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                <img class="w-33 flex-grow-1 mx-1" src="/imgs/movie-2.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">Best 3 of picks in October</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="w-33">
+                            <div class="d-flex gap-1 bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-2.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">Weekend Picks: 'Cukur', 'Past Lives', and More</p>
+                        </div>
+                        <div class="w-33 mx-3">
+                            <div class="d-flex gap-1 bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/top-new-3.jpg" alt="img">
+                                <img class="w-33 flex-grow-1 mx-" src="/imgs/top-new-2.jpg" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/top-new-4.jpg" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">'Ligo', 'Ice Age', 'Shrek', and More</p>
+                        </div>
+                        <div class="w-33">
+                            <div class="d-flex bg-light">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                <img class="w-33 flex-grow-1 mx-1" src="/imgs/movie-2.png" alt="img">
+                                <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                            </div>
+                            <p class="m-1 mt-2">Best 3 of picks in October</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamples" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon swip-btn" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExamples" data-bs-slide="next">
+                <span class="carousel-control-next-icon swip-btn" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="halloween py-5">
+        <div class="container">
+            <div class="main-heading">
+                <h2>
+                    halloween picks
+                    <i class="fa-solid fa-angle-right"></i>
+                </h2>
+                <p class="opacity-50">
+                    Our Halloween guide has treats for all.
+                </p>
+            </div>
+            <div id="carouselExampl" class="carousel slide mt-4">
+                <div class="carousel-inner container">
+                    <!-- 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex">
+                            <div class="w-33">
+                                <div class="d-flex gap-1 bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-6.jpg" alt="img">
+                                </div>
+                                <div class="text">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span class="d-inline-block">
+                                        Custume Inspiration for 2023
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-33 mx-3">
+                                <div class="d-flex gap-1 bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-5.jpeg" alt="img">
+                                </div>
+                                <div class="text">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span class="d-inline-block">
+                                        Avatar 2022
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-33">
+                                <div class="d-flex bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-3-bg.png" alt="img">
+                                </div>
+                                <div class="text">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span class="d-inline-block">
+                                        Rath of man 2021
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <div class="w-33">
+                                <div class="d-flex gap-1 bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-2.png" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                                </div>
+                                <p class="m-1 mt-2">Weekend Picks: 'Cukur', 'Past Lives', and More</p>
+                            </div>
+                            <div class="w-33 mx-3">
+                                <div class="d-flex gap-1 bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/top-new-3.jpg" alt="img">
+                                    <img class="w-33 flex-grow-1 mx-" src="/imgs/top-new-2.jpg" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/top-new-4.jpg" alt="img">
+                                </div>
+                                <p class="m-1 mt-2">'Ligo', 'Ice Age', 'Shrek', and More</p>
+                            </div>
+                            <div class="w-33">
+                                <div class="d-flex bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                    <img class="w-33 flex-grow-1 mx-1" src="/imgs/movie-2.png" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                                </div>
+                                <p class="m-1 mt-2">Best 3 of picks in October</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <div class="w-33">
+                                <div class="d-flex gap-1 bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-2.png" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                                </div>
+                                <p class="m-1 mt-2">Weekend Picks: 'Cukur', 'Past Lives', and More</p>
+                            </div>
+                            <div class="w-33 mx-3">
+                                <div class="d-flex gap-1 bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/top-new-3.jpg" alt="img">
+                                    <img class="w-33 flex-grow-1 mx-" src="/imgs/top-new-2.jpg" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/top-new-4.jpg" alt="img">
+                                </div>
+                                <p class="m-1 mt-2">'Ligo', 'Ice Age', 'Shrek', and More</p>
+                            </div>
+                            <div class="w-33">
+                                <div class="d-flex bg-light">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-1.png" alt="img">
+                                    <img class="w-33 flex-grow-1 mx-1" src="/imgs/movie-2.png" alt="img">
+                                    <img class="w-33 flex-grow-1" src="/imgs/movie-3.png" alt="img">
+                                </div>
+                                <p class="m-1 mt-2">Best 3 of picks in October</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampl" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon swip-btn" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampl" data-bs-slide="next">
+                    <span class="carousel-control-next-icon swip-btn" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-in py-5">
+        <div class="main-heading container">
+            <h2>
+                From your Watchlist
+                <i class="fa-solid fa-angle-right"></i>
+            </h2>
+        </div>
+        <div class="container text-center text-white mt-5">
+            <i class="fa-regular fa-circle-xmark rotate fs-1 mb-4"></i>
+            <h2 class="fs-6 fw-bolder">
+                Sign in to access your Watchlist
+            </h2>
+            <h5 class="mb-4 fs-6 opacity-75"> 
+                Save shows and movies to keep track of what you want to watch.
+            </h5>
+            <a href="#" class="d-inline-block rounded fw-bold py-2 px-5 fs-7">Sign in for to MovieMingle</a>
+        </div>
+    </section>
+
+    <section class="more-to-watch py-5">
+        <div class="container">
+            <div class="main-heading">
+                <h2>
+                    more to watch
+                    <i class="fa-solid fa-angle-right"></i>
+                </h2>
+                <p class="opacity-50">
+                    MovieMingle helps you select the perfect next show or movie to watch.
+                </p>
+            </div>
+            <a href="#" class="d-inline-block rounded fw-bold py-2 px-5 text-white border border-2 border-light fs-7">Sign in for to MovieMingle</a>
+            <a href="#" class="d-inline-block rounded fw-bold py-2 px-5 text-white border border-2 border-light ms-4 fs-7">Sign in for to MovieMingle</a>
+        </div>
+    </section>
+
+    <section class="explore py-5">
+        <div class="container">
+            <div class="main-heading">
+                <h1 class="mb-5">Explore Movies & TV shows</h1>
+                <h2>
+                    top box office (US)
+                    <i class="fa-solid fa-angle-right"></i>
+                </h2>
+                <p class="opacity-50">
+                    Weedend of October 2022
+                </p>
+            </div>
+            <div class="row fw-semibold text-white">
+
+                <div class="col-md-6 p-2 d-flex align-items-center gap-3 bg-black-linear">
+                    <span class="d-inline-block px-3 sec-num">1</span>
+                    <i class="fa-regular fa-circle-xmark rotate fs-3"></i>
+                    <div class="flex-grow-1 letter-spacing-1">
+                        <p class="mb-1">Five Nights at Freddy's</p>
+                        <span class="opacity-75 ">$80M</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-2 d-flex align-items-center gap-3">
+                    <span class="d-inline-block px-3 sec-num">2</span>
+                    <i class="fa-regular fa-circle-xmark rotate fs-3"></i>
+                    <div class="flex-grow-1 letter-spacing-1">
+                        <p class="mb-1">Five Nights at Freddy's</p>
+                        <span class="opacity-75 ">$80M</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-2 d-flex align-items-center gap-3">
+                    <span class="d-inline-block px-3 sec-num">3</span>
+                    <i class="fa-regular fa-circle-xmark rotate fs-3"></i>
+                    <div class="flex-grow-1 letter-spacing-1">
+                        <p class="mb-1">Five Nights at Freddy's</p>
+                        <span class="opacity-75 ">$80M</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-2 d-flex align-items-center gap-3 bg-black-linear">
+                    <span class="d-inline-block px-3 sec-num">4</span>
+                    <i class="fa-regular fa-circle-xmark rotate fs-3"></i>
+                    <div class="flex-grow-1 letter-spacing-1">
+                        <p class="mb-1">Five Nights at Freddy's</p>
+                        <span class="opacity-75 ">$80M</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-2 d-flex align-items-center gap-3 bg-black-linear">
+                    <span class="d-inline-block px-3 sec-num">5</span>
+                    <i class="fa-regular fa-circle-xmark rotate fs-3"></i>
+                    <div class="flex-grow-1 letter-spacing-1">
+                        <p class="mb-1">Five Nights at Freddy's</p>
+                        <span class="opacity-75 ">$80M</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-2 d-flex align-items-center gap-3">
+                    <span class="d-inline-block px-3 sec-num">6</span>
+                    <i class="fa-regular fa-circle-xmark rotate fs-3"></i>
+                    <div class="flex-grow-1 letter-spacing-1">
+                        <p class="mb-1">Five Nights at Freddy's</p>
+                        <span class="opacity-75 ">$80M</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="news py-5">
+        <div class="container">
+            <div class="main-heading">
+                <h2>
+                    top news
+                    <i class="fa-solid fa-angle-right"></i>
+                </h2>
+            </div>
+        </div>
+
+    </section>
+
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    <!-- main js -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!-- <script src="./js/main.js"></script> -->
 </body>
 </html>

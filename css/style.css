@@ -1,18 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+:root {
+    --main-clr: #F5C518;
+    --main-transition: 0.3s;
+}
+
+
+
 * {
     font-family: 'Poppins', sans-serif;
 }
 body {
-    /* background-color: #000; */
     line-height: 1.5;
+    background-color: #000;
+}
+nav {
+    background-color: #121212;
 }
 p {
-    /* color: #bababa; */
+    color: #fff;
+    /* font-size: clamp(.8rem, 5vw, .9rem); */
 }
 a {
     text-decoration: none;
 }
+
+
+/* ========================= start the componants  ========================= */
+.main-clr {
+    color: ;
+}
+.main-heading h1 {
+    color: var(--main-clr);
+    /* letter-spacing: -1.5px; */
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2rem);
+}
+.main-heading h2 {
+    color: #fff;
+    padding: 0 0 0 15px;
+    text-transform: capitalize;
+    /* letter-spacing: -1.5px; */
+    font-weight: 600;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    position: relative;
+    cursor: pointer;
+}
+.main-heading h2::before {
+    content: "";
+    width: 4px;
+    height: 36px;
+    background-color: var(--main-clr);
+    border-radius: 20px;
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+.main-heading h2 i {
+    position: relative;
+    top: 2px; left: 6px;
+    transition: var(--main-transition);
+}
+.main-heading h2:hover i {
+    color: var(--main-clr);
+    left: 14px;
+}
+.swip-btn {
+    background-color: #121212;
+    border-radius: 4px;
+    padding: 30px 20px;
+    border: 2px solid #ffffff;
+}
+.w-33 {
+    width: 33%;     
+}
+.gap-1-percent {
+    gap: 1%;
+}
+.w-32 {
+    width: 32%;
+}
+.flex-basis-33 {
+    flex-basis: 10%;
+}
+.fs-7 {
+    font-size: 0.875rem;
+}
+.letter-spacing-1 {
+    letter-spacing: 1.5px;
+}
+/* =========================================================================== */
+
+
 
 
 
@@ -23,7 +103,63 @@ a {
 }
 .hero .slider {
     min-height: 540px;
+    max-height: 600px;
+}
+.hero .up-coming-movies {
+    /* max-height: 600px; */
+}
+.hero .up-coming-movies img {
+    max-height: 162px;
 }
 .hero .up-coming-movies div {
-    height: 27%;
+    /* height: 22%; */
 }
+.swip-btn {
+    background-color: #121212;
+    border-radius: 4px;
+    padding: 30px 20px;
+    border: 2px solid #ffffff;
+}
+.hero .box {
+    cursor: pointer;
+}
+
+.halloween .text {
+    color: #fff;
+    /* margin-top: -50px; */
+    margin-left: 30px;
+}
+.halloween .text i {
+    margin-right: 10px;
+}
+
+
+/* ====================  start the sign in ================== */
+i.rotate {
+    transform: rotate(45deg);
+}
+.sign-in a {
+    background-color: #121212;
+}
+/* ====================  end the sign in ================== */
+
+/* ====================  start the explore movies and shows ================== */
+.explore span.sec-num {
+    border-right: 3px solid var(--main-clr);
+}
+.explore div.bg-black-linear {
+    background: linear-gradient(45deg, transparent, #121212);
+}
+.explore .row > div {
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.explore .row > div:hover {
+    opacity: 0.7;
+}
+/* ====================  end the explore movies and shows ================== */
+
+
+
+
+
