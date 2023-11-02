@@ -7,7 +7,7 @@
     <meta name="description"
         content="Build an incredible workplace and grow your business with Gusto’s all in-one platform with amazing">
     <title>dashboard</title>
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -25,32 +25,37 @@
     <section class="container">
         <div class="row flex-nowrap">
             <!-- side nav -->
-            <div class="side-content d-flex flex-column align-items-center py-5 m-1 col-auto col-md-3 min-vh-100">
-                <div class="profil d-flex flex-column align-items-center gap-3">
-                    <img src="img/user.png" alt="">
-                    <span class="d-none d-md-inline">user name</span>
+            <div class="sidebar col-auto col-md-3 min-vh-100 ">
+                <div class="side-content d-flex flex-column align-items-center  ">
+                    <div class="profil d-flex flex-column align-items-center gap-3">
+                        <img src="img/user.png" alt="">
+                        <span class="d-none d-md-inline">user name</span>
+                    </div>
+                    <ul class="nav d-flex flex-column">
+                        <li><a href="dashboard.html" class="text-decoration-none text-white px-4 py-2"><i
+                                    class=" fa-solid fa-border-all"></i>
+                                <span class="d-none d-md-inline">Dashboard</span></a></li>
+                        <li><a href="favorite.html" class="text-decoration-none text-white px-4 py-2"><i
+                                    class=" fa-regular fa-heart"></i> <span
+                                    class="d-none d-md-inline">Favorite</span></a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                    class=" fa-regular fa-bookmark"></i>
+                                <span class="d-none d-md-inline ">To-watch</span></a></li>
+                        <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                    class=" fa-regular fa-compass"></i> <span
+                                    class="d-none d-md-inline">Watch-history</span></a></li>
+                        <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                    class=" fa-regular fa-user"></i> <span class="d-none d-md-inline">Account</span></a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                                    class=" fa-solid fa-arrow-right-from-bracket"></i> <span
+                                    class="d-none d-md-inline">Log
+                                    out</span></a></li>
+                    </ul>
                 </div>
-                <ul class="nav d-flex flex-column">
-                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
-                                class=" fa-solid fa-border-all"></i>
-                            <span class="d-none d-md-inline">Dashboard</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
-                                class=" fa-regular fa-heart"></i> <span class="d-none d-md-inline">Favorite</span></a>
-                    </li>
-                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
-                                class=" fa-regular fa-bookmark"></i>
-                            <span class="d-none d-md-inline ">To-watch</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
-                                class=" fa-regular fa-compass"></i> <span
-                                class="d-none d-md-inline">Watch-history</span></a></li>
-                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
-                                class=" fa-regular fa-user"></i> <span class="d-none d-md-inline">Account</span></a>
-                    </li>
-                    <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
-                                class=" fa-solid fa-arrow-right-from-bracket"></i> <span class="d-none d-md-inline">Log
-                                out</span></a></li>
-                </ul>
             </div>
+
             <!-- content -->
             <div class="content m-1 col-md-9 min-vh-100">
                 <div class="p-2 rounded m-4 d-flex flex-column gap-5">
@@ -79,65 +84,68 @@
                     </div>
                 </div>
                 <div class="swiper mySwiper mb-lg-3 rounded">
-                    <h1  class="title fs-5">Your reviews</h1>
+                    <h1 class="title fs-5">Your reviews</h1>
                     <div class="swiper-wrapper ">
-                      <div class="swiper-slide">
-                        <div class="feedback bg-white d-flex flex-column rounded p-3 w-50 mx-auto">
-                            <div class="d-flex gap-2">
-                                <img src="img/user.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="feedback bg-white d-flex flex-column rounded p-3 w-50 mx-auto">
+                                <div class="d-flex gap-2">
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <span>user name<br></span>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
                                 <div>
-                                    <span>user name<br></span>
-                                    <i class="fa-solid fa-star"></i>
+                                    <p>“I have no idea why Rob Reiner, or anyone else, wanted to make this story into a
+                                        movie, and close examination of the film itself is no help.”</p>
                                 </div>
                             </div>
-                            <div>
-                                <p>“I have no idea why Rob Reiner, or anyone else, wanted to make this story into a
-                                    movie, and close examination of the film itself is no help.”</p>
-                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="feedback bg-white d-flex flex-column rounded p-3 w-50 mx-auto">
-                            <div class="d-flex gap-2">
-                                <img src="img/user.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="feedback bg-white d-flex flex-column rounded p-3 w-50 mx-auto">
+                                <div class="d-flex gap-2">
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <span>user name<br></span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
                                 <div>
-                                    <span>user name<br></span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                                    <p>“Honestly, the worst thing about Black Panther is that it had to be released in
+                                        2018
+                                        and not during the term of America’s first black president.”</p>
                                 </div>
                             </div>
-                            <div>
-                                <p>“Honestly, the worst thing about Black Panther is that it had to be released in 2018
-                                    and not during the term of America’s first black president.”</p>
-                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="feedback bg-white d-flex flex-column rounded p-3 w-50 mx-auto">
-                            <div class="d-flex gap-2">
-                                <img src="img/user.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="feedback bg-white d-flex flex-column rounded p-3 w-50 mx-auto">
+                                <div class="d-flex gap-2">
+                                    <img src="img/user.png" alt="">
+                                    <div>
+                                        <span>user name<br></span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
                                 <div>
-                                    <span>user name<br></span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                                    <p>“Christopher Nolan's complex, vivid portrait of J. Robert Oppenheimer, the
+                                        “father
+                                        of the atomic bomb,” is a brilliant achievement in formal and conceptual terms”
+                                    </p>
                                 </div>
                             </div>
-                            <div>
-                                <p>“Christopher Nolan's complex, vivid portrait of J. Robert Oppenheimer, the “father
-                                    of the atomic bomb,” is a brilliant achievement in formal and conceptual terms”</p>
-                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="swiper-button-next text-warning"></div>
-                    <div class="swiper-button-prev text-warning "></div>
+                    <div class="swiper-button-next text-white"></div>
+                    <div class="swiper-button-prev text-white "></div>
                     <div class="swiper-pagination "></div>
-                  </div>
+                </div>
             </div>
 
         </div>

@@ -1,3 +1,5 @@
+// dougnut charts
+
 const ctx = document.getElementById("myChart");
 new Chart(ctx, {
   type: "doughnut",
@@ -5,14 +7,18 @@ new Chart(ctx, {
     labels: ["Action"],
     datasets: [
       {
-        label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1,
-        backgroundcolor: "#34B53A",
+        label: "# action",
+        data: [67, 33],
+        backgroundColor: [
+          'rgb(52, 181, 58)',
+          'rgb(226,251,215)'
+        ],
+        borderWidth: 1,        
       },
     ],
   },
 });
+
 
 const don1 = document.getElementById("myChart1");
 new Chart(don1, {
@@ -21,10 +27,13 @@ new Chart(don1, {
     labels: ["Comedy"],
     datasets: [
       {
-        label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
+        label: "# comedy",
+        data: [46, 54],
         borderWidth: 1,
-        backgroundcolor: "#34B53A",
+        backgroundColor: [
+          'rgb(67, 57, 242)',
+          'rgb(226,251,215)'
+        ],
       },
     ],
   },
@@ -37,10 +46,13 @@ new Chart(don2, {
     labels: ["Horror"],
     datasets: [
       {
-        label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
+        label: "# Horror",
+        data: [15, 85],
         borderWidth: 1,
-        backgroundcolor: "#34B53A",
+        backgroundColor: [
+          'rgb(255, 58, 41)',
+          'rgb(255,229,211)'
+        ],
       },
     ],
   },
@@ -53,17 +65,22 @@ new Chart(don3, {
     labels: ["Romance"],
     datasets: [
       {
-        label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
+        label: "# romance",
+        data: [67, 33],
         borderWidth: 1,
-        backgroundcolor: "#34B53A",
+        backgroundColor: [
+          'rgb(2, 160, 252)',
+          'rgb(204,248,254)'
+        ],
       },
     ],
   },
 });
 
-const line = document.getElementById("lineChart");
 
+// line charts
+
+const line = document.getElementById("lineChart");
 new Chart(line, {
   type: "line",
   data: {
@@ -72,7 +89,9 @@ new Chart(line, {
       {
         label: "Total Watch Time",
         data: [12, 19, 3, 5, 2, 3],
+        borderColor:'rgb(242,235,39)',
         borderWidth: 1,
+      
       },
     ],
   },
@@ -85,8 +104,9 @@ new Chart(line, {
   },
 });
 
-const bar = document.getElementById("barChart");
+// bar chart
 
+const bar = document.getElementById("barChart");
 new Chart(bar, {
   type: "bar",
   data: {
@@ -94,7 +114,11 @@ new Chart(bar, {
     datasets: [
       {
         label: "Number of Movies/Series Watched",
-        data: [12, 19, 3, 5, 2, 3],
+        data: [10, 5],
+        backgroundColor: [
+          'rgb(59, 39, 242)',
+          'rgb(242,39,39)'
+        ],
         borderWidth: 1,
       },
     ],
@@ -108,6 +132,7 @@ new Chart(bar, {
   },
 });
 
+// swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
