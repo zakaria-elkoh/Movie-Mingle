@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -134,7 +135,7 @@ a{
     color: #333333;
 }
 .benfits-subtitle{
-    font-size: 21px;
+    font-size: 20px;
     font-weight: bold;
     color: #333333;
 }
