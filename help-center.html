@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/help-center.css">
 
-    <script src="./js/help-center.js" defer></script>
+    <script src="./js/contact.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
 </head>
 <body>
@@ -18,18 +18,20 @@
                 <div class="search-content">
                     <h1 class="search-title">Help Center</h1>
                     <form id="search-form">
-                        <img src="/Contact-images/search.svg" alt="search icon" class="search-icon">
+                        <img src="./Contact-images/search.svg" alt="search icon" class="search-icon">
                         <input type="text" placeholder="what do you need help with?" class="form-input">
                     </form>
                 </div>
             </div>
 
-            <div class="buttons-container">
-                <a href="./sign-up.html" class="first-btn button">Join MovieMingle</a>
-                <a href="./sign-in.html" class="second-btn button">Sign in</a>
+            <div class="buttons-container button-section">
+                <a href="./sign-up.html" class="first-btn button" id="button">Join MovieMingle</a>
+                <a href="./sign-in.html" class="second-btn button" id="button">Sign in</a>
             </div>
+            <a><img src="./Contact-images/Menu.png" alt="menu" width="50px" height="50px" class="menu"></a>
         </nav>
     </header>
+
     <section class="signin-guide">
         <h2 class="guide-title">Sign in for personalized help</h2>
         <div class="buttons-container">
@@ -37,7 +39,7 @@
             <a href="./sign-up.html" class="first-btn button">Join MovieMingle</a>
         </div>
         <p>Popular topics</p>
-        <div class="topic-items d-flex">
+        <div class="topic-items d-flex ">
             <div class="topic-item">
                 <img src="./Contact-images/file.png" alt="image icon" class="topic-image">
                 <p class="topic-description">How to sign up for MovieMingle</p>
@@ -59,23 +61,23 @@
         <div class="categories-items d-flex gap-4">
             <div class="category-item w-25">
                 <h3 class="category-title">Getting Started</h3>
-                <a href="./help-center.html" class="category-link">How to sign up for MovieMingle</a>
-                <a href="./help-center.html" class="category-link">What is MovieMingle?</a>
-                <a href="./help-center.html" class="category-link">Plans and Pricing</a>
+                <a href="./help-center.html" class="category-link">How to sign up for MovieMingle <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
+                <a href="./help-center.html" class="category-link">What is MovieMingle? <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
+                <a href="./help-center.html" class="category-link">Plans and Pricing <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
             </div>
 
             <div class="category-item w-25">
                 <h3 class="category-title">Manage My Account</h3>
-                <a href="./help-center.html" class="category-link">Can't sign in to MovieMingle</a>
-                <a href="./help-center.html" class="category-link">How to restart your MovieMingle account</a>
-                <a href="./help-center.html" class="category-link">MovieMingle account email was changed without permission</a>
+                <a href="./help-center.html" class="category-link">Can't sign in to MovieMingle <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
+                <a href="./help-center.html" class="category-link">How to restart your MovieMingle account <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
+                <a href="./help-center.html" class="category-link">MovieMingle account email was changed without permission <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
             </div>
 
             <div class="category-item w-25">
                 <h3 class="category-title">Watching MovieMingle</h3>
-                <a href="./help-center.html" class="category-link">MovieMingle Supported Devices | Watch MovieMingle on your TV, phone, or computer</a>
-                <a href="./help-center.html" class="category-link">How to watch MovieMingle on your TV</a>
-                <a href="./help-center.html" class="category-link">How to download titles to watch offline</a>
+                <a href="./help-center.html" class="category-link">MovieMingle Supported Devices | Watch MovieMingle on your TV, phone, or computer <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
+                <a href="./help-center.html" class="category-link">How to watch MovieMingle on your TV <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
+                <a href="./help-center.html" class="category-link">How to download titles to watch offline <img src="./Contact-images/arrow.png" class="float-end d-lg-none" alt="arrow icon"></a>
             </div>
             
             <div class="category-item w-25">
@@ -92,7 +94,29 @@
     <footer>
         <div class="contact-bar">
             <h3 class="title-bar">Need more help?</h3>
-            <a href="./contact.html" class="contact-btn button">Contact us</a>
+            <a href="./contact.html" class="button contact-btn">Contact Us</a>
+        </div>
+        <div class="select">
+            <select id="lang-switcher" aria-label="select your preferred language&nbsp;:">
+    
+                <option value="de">Deutsch</option>
+            
+                <option value="ar">العربية</option>
+            
+                <option value="en" selected="selected">English</option>
+            
+                <option value="es">Español</option>
+            
+                <option value="fr">Français</option>
+            
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+        <div class="footer-links">
+            <a href="./help-center.html">Terms of Use</a>
+            <a href="./help-center.html">Privacy</a>
+            <a href="./help-center.html">Cookie Preferences</a>               
+            <a href="./help-center.html">Corporate Information</a>
         </div>
     </footer>
 </body>
