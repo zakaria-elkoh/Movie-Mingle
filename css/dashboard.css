@@ -63,7 +63,6 @@ header {
 .swiper-slide {
     font-size: 16px;
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -83,4 +82,18 @@ header {
 }
 .mySwiper{
     background-color: #2c2b2bd6;
+}
+
+@media (max-width:700px) {
+    .swiper-slide {
+        font-size: 1em;
+
+    }
+    #swipers {
+        display: none;
+    }
+    #feed {
+        width: 100% !important;
+        margin: 0 !important;
+    }
 }
