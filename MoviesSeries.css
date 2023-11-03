@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     list-style: none;
     color: inherit;
     text-decoration: none;
@@ -20,7 +19,7 @@ h1 {
 }
 
 .films{
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 .movie {
@@ -89,9 +88,11 @@ h1 {
 }
 .filter select{
     font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
 }
 .reset-btn {
     padding: 8px 15px;
+    margin: 20px 0;
     background-color: #F5C518;
     font-family: 'Poppins', sans-serif;
     border: none;
@@ -124,7 +125,7 @@ h1 {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 .card-info{
@@ -177,12 +178,16 @@ h1 {
 
 .pagination {
     text-align: center;
-    margin-top: 20px;
+    width: 30%;
+    margin: 20px auto;
+
 }
 
 .pagination button {
     padding: 5px 10px;
     margin: 0 5px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -200,3 +205,10 @@ h1 {
     background-color: #ffcc00;
     color: #000;
 }
+
+#currentPage{
+    background-color: #F5C518;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
