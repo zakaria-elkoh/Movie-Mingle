@@ -24,16 +24,22 @@ p {
 }
 a {
     text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
 }
 
 
 /* ========================= start the componants  ========================= */
 .main-clr {
-    color: ;
+    color: var(--main-clr);
+}
+.bg-main {
+    background-color: var(--main-clr);
 }
 .main-heading h1 {
     color: var(--main-clr);
-    /* letter-spacing: -1.5px; */
     font-weight: 600;
     font-size: clamp(2rem, 5vw, 2rem);
 }
@@ -90,6 +96,10 @@ a {
 .letter-spacing-1 {
     letter-spacing: 1.5px;
 }
+.bg-card {
+    background-color: #121212;
+}
+
 /* =========================================================================== */
 
 
@@ -97,22 +107,30 @@ a {
 
 
 
+/* ========================= start the nav  ========================= */
+@media (max-width: 768px) {
+    .w-sm-100 {
+        width: 100%;
+    }
+}
+/* ========================= end the nav  ========================= */
+
+
 /* ========================= start the hero section  ========================= */
 .hero {
-    min-height: calc(100vh - 75px);
+    /* min-height: calc(100vh - 75px); */
 }
-.hero .slider {
-    min-height: 540px;
-    max-height: 600px;
+.hero .carousel-item {
+    position: relative;
 }
-.hero .up-coming-movies {
-    /* max-height: 600px; */
+.hero .carousel-item .text {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.972), transparent);
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
 }
 .hero .up-coming-movies img {
     max-height: 162px;
-}
-.hero .up-coming-movies div {
-    /* height: 22%; */
 }
 .swip-btn {
     background-color: #121212;
@@ -126,7 +144,6 @@ a {
 
 .halloween .text {
     color: #fff;
-    /* margin-top: -50px; */
     margin-left: 30px;
 }
 .halloween .text i {
@@ -160,6 +177,17 @@ i.rotate {
 /* ====================  end the explore movies and shows ================== */
 
 
-
+/* ====================  start the footer ================== */
+footer a:hover {
+    text-decoration: underline;
+}
+footer i {
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+footer i:hover {
+    transform: scale(1.3);
+}
+/* ====================  end the footer ================== */
 
 
