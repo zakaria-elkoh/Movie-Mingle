@@ -4,7 +4,7 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     opacity: 0.8;
-    backdrop-filter: blur(10px);  
+    /* backdrop-filter: blur(10px);   */
 }
 .container .card {
   position: relative;
@@ -171,8 +171,9 @@
       font-size: 1rem;
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 990px) {
     #row2{
       display: none;
     }
   } 
+
