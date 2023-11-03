@@ -1,0 +1,243 @@
+:root {
+    --main-transition: 0.3s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+h1 {
+    color: #F5C518;
+    font-family: "B612", sans-serif;
+    padding: 50px 10%;
+    font-weight: bold;
+    text-align: start;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+.films{
+    width: 80%;
+    margin: auto;
+}
+.movie {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.movie:hover .movie-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.display-button{
+    display: flex;
+}
+.swiper{
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+
+    h1{
+        font-size: 1.7rem !important;
+    }
+    h2{
+        font-size: 1.2rem !important;
+    }
+    h3{
+        font-size: 0.7rem !important;
+    }
+
+    .swiper-button-next:after,.swiper-button-prev:after {
+        display: none;
+    }
+    .card {
+        flex-basis: calc(50% - 20px) !important;
+    }
+    .pagination {
+        width: 30% !important;
+        margin: 10px auto;
+    }
+
+    .films{
+        width: 70%;
+    }
+    .movie-info {
+        left: 10%;
+    }
+    .pagination{
+        height: 30px;
+        width: 100%;
+    }
+}
+.filter {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+    border: none;
+    border-radius: 4px;
+}
+.filter select{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+}
+.reset-btn {
+    padding: 8px 15px;
+    margin: 20px 0;
+    background-color: #F5C518;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: yellow;
+}
+
+.language-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-button {
+    padding: 10px 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.cards-section{
+    width: 80%;
+    margin:  0 auto;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card-info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 13px;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card:hover .card-info {
+    visibility: visible;
+    opacity: 1;
+}
+.movie-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.release-date {
+    font-size: 1rem;
+}
+
+.pagination {
+    text-align: center;
+    width: 30%;
+    margin: 20px auto;
+
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.numberButton {
+    padding: 5px 10px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+#currentPage{
+    background-color: #F5C518;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer i {
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+footer i:hover {
+    transform: scale(1.3);
+}
+
