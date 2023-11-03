@@ -62,7 +62,7 @@ document.querySelectorAll('.card').forEach(movie => {
 
 // Function to update the display of movies based on the current page
 function updateMovieDisplay() {
-    const start = (currentPage - 1) * moviesPerPage;
+    const start = (currentPage -1) * moviesPerPage;
     const end = start + moviesPerPage;
 
     document.querySelectorAll('.card').forEach((movie, index) => {

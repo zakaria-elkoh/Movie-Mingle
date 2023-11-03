@@ -1,3 +1,6 @@
+:root {
+    --main-transition: 0.3s;
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +20,13 @@ h1 {
     font-weight: bold;
     text-align: start;
 }
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
 .films{
     width: 80%;
     margin: auto;
@@ -59,7 +68,7 @@ h1 {
     align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     h1{
         font-size: 1.7rem !important;
@@ -74,7 +83,20 @@ h1 {
     .swiper-button-next:after,.swiper-button-prev:after {
         display: none;
     }
-
+    .pagination {
+        width: 70% !important;
+        margin: 10px auto;
+    }
+    .films{
+        width: 70%;
+    }
+    .movie-info {
+        left: 10%;
+    }
+    .pagination{
+        height: 30px;
+        width: 100%;
+    }
 }
 .filter {
     width: 80%;
@@ -191,24 +213,27 @@ h1 {
     cursor: pointer;
 }
 
-.pagination button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-}
+
 .numberButton {
     padding: 5px 10px;
     margin: 0 3px;
     cursor: pointer;
 }
 
-.numberButton.active {
-    background-color: #ffcc00;
-    color: #000;
-}
-
 #currentPage{
     background-color: #F5C518;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer i {
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+footer i:hover {
+    transform: scale(1.3);
 }
 
