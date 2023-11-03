@@ -11,9 +11,11 @@ new Chart(ctx, {
         data: [67, 33],
         backgroundColor: [
           'rgb(52, 181, 58)',
-          'rgb(226,251,215)'
+          'transparent'
         ],
-        borderWidth: 1,        
+        borderWidth: 0.5,  
+        cutout: '85%',
+        borderRadius: 5      
       },
     ],
   },
@@ -32,8 +34,11 @@ new Chart(don1, {
         borderWidth: 1,
         backgroundColor: [
           'rgb(67, 57, 242)',
-          'rgb(226,251,215)'
+          'transparent'
         ],
+        borderWidth: 0.5,  
+        cutout: '85%',
+        borderRadius: 5
       },
     ],
   },
@@ -51,8 +56,11 @@ new Chart(don2, {
         borderWidth: 1,
         backgroundColor: [
           'rgb(255, 58, 41)',
-          'rgb(255,229,211)'
+          'transparent'
         ],
+        borderWidth: 0.5, 
+        cutout: '85%',
+        borderRadius: 6
       },
     ],
   },
@@ -70,8 +78,11 @@ new Chart(don3, {
         borderWidth: 1,
         backgroundColor: [
           'rgb(2, 160, 252)',
-          'rgb(204,248,254)'
+          'transparent'
         ],
+        borderWidth: 0.5, 
+        cutout: '85%',
+        borderRadius: 6
       },
     ],
   },
@@ -114,12 +125,14 @@ new Chart(bar, {
     datasets: [
       {
         label: "Number of Movies/Series Watched",
-        data: [10, 5],
+        data: [10, 15],
         backgroundColor: [
           'rgb(59, 39, 242)',
           'rgb(242,39,39)'
         ],
         borderWidth: 1,
+        borderRadius: 6,
+        maxBarThickness: 20
       },
     ],
   },
