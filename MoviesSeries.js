@@ -5,7 +5,7 @@ const ratingFilter = document.getElementById("ratingFilter");
 const languageFilter = document.getElementById("languageFilter");
 
 // Get movie elements
-const movies = document.querySelectorAll(".movie");
+const movies = document.querySelectorAll(".card");
 
 // Add event listeners to filters
 genreFilter.addEventListener("change", filterMovies);
@@ -51,13 +51,12 @@ function resetFilters() {
 filterMovies();
 
 
-
-// script.js
+// Pagination related code
 let currentPage = 1; // starting page
-const moviesPerPage = 5;
+const moviesPerPage = 6;
 
 // Hide all movie cards initially
-document.querySelectorAll('.movie').forEach(movie => {
+document.querySelectorAll('.card').forEach(movie => {
     movie.style.display = 'none';
 });
 
@@ -66,7 +65,7 @@ function updateMovieDisplay() {
     const start = (currentPage - 1) * moviesPerPage;
     const end = start + moviesPerPage;
 
-    document.querySelectorAll('.movie').forEach((movie, index) => {
+    document.querySelectorAll('.card').forEach((movie, index) => {
         if (index >= start && index < end) {
             movie.style.display = 'block';
         } else {
@@ -88,7 +87,8 @@ document.getElementById('prevPage').addEventListener('click', () => {
 });
 
 document.getElementById('nextPage').addEventListener('click', () => {
-    const totalMovies = document.querySelectorAll('.movie').length;
+    const totalMovies = document.querySelectorAll('.card').length;
+    console.log(totalMovies)
     if (currentPage < Math.ceil(totalMovies / moviesPerPage)) {
         currentPage++;
         updateMovieDisplay();
