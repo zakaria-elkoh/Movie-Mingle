@@ -139,6 +139,16 @@
   cursor: pointer;
   
 }
+footer a:hover {
+  text-decoration: underline;
+}
+footer i {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+footer i:hover {
+  transform: scale(1.3);
+}
 
 @keyframes slide {
   from {
