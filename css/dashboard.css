@@ -15,10 +15,6 @@ header {
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.099);
 }
 
-.sidebar {
-    /* position: relative; */
-}
-
 .side-content {
     position: sticky;
     height: 100vh;
@@ -64,16 +60,9 @@ header {
     color: #F5C518;
 }
 
-/* 
-.swiper {
-    width: 100%;
-    height: 100%;
-  } */
-
 .swiper-slide {
     font-size: 16px;
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -83,4 +72,32 @@ header {
 .line,
 .bar {
     background-color: #000;
+}
+
+.doughnut {
+    background-color: #2c2b2bd6;
+}
+
+.linech {
+    background-color: #2c2b2bd6;
+}
+
+.mySwiper {
+    background-color: #2c2b2bd6;
+}
+
+@media (max-width:700px) {
+    .swiper-slide {
+        font-size: 1em;
+
+    }
+
+    #swipers {
+        display: none;
+    }
+
+    #feed {
+        width: 100% !important;
+        margin: 0 !important;
+    }
 }

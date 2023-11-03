@@ -1,0 +1,126 @@
+header {
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    background: transparent;
+    padding: 30px 10%;
+    transition: ease .40s;
+    background: transparent;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.099);
+}
+
+.side-content {
+    position: sticky;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    gap: 6em;
+    padding-top: 10%;
+
+}
+
+.nav {
+    gap: 30px;
+}
+
+.nav li a:hover {
+    background-color: #f5c5181b;
+    border-radius: 1em;
+}
+
+.side-content {
+    background-color: black;
+    background-image: linear-gradient(black, #f5c51880);
+    border-radius: 1em;
+}
+
+
+.side-content span {
+    color: white;
+    font-size: 1em;
+}
+
+.content {
+    border-radius: 1em;
+    background-color: #403f3f7a;
+}
+
+.title {
+    color: #F5C518;
+}
+
+.firstPart,
+.line,
+.bar {
+    background-color: #000;
+}
+
+
+.container1 {
+    position : relative;
+    /* width : 1100px; */
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 30px; 
+  }
+  
+  .container .card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color : #121212;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .container .card:hover {
+    height : 350px;    
+  }
+  
+  
+  .container .card .image {
+    position : relative;
+    width : 260px;
+    height : 260px;
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #E1E1E1;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container .card:hover .content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }

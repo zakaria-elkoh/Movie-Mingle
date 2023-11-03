@@ -8,7 +8,6 @@
 a{
     text-decoration: none;
 }
-
 /* Header */
 header{
     padding: 25px 0 40px;
@@ -74,6 +73,9 @@ nav{
     background-color: #F5C518;
     color: #000;
 }
+.menu{
+    display: none;
+}
 .signin-guide{
     padding: 30px 11% 50px;
     border-bottom: 2px solid #D9D9D9;
@@ -101,7 +103,7 @@ nav{
 .topic-description{
     margin-bottom: 0;
 }
-.topics-categories{
+.topics-categories, footer{
     padding: 50px 11% 50px;
 }
 .category-title{
@@ -109,10 +111,130 @@ nav{
     font-weight: 700;
     margin-bottom: 40px;
 }
-.category-link{
+.category-link, .footer-links a{
     display: block;
     font-size: 15px;
     line-height: 30px;
+}
+.category-link{
     margin-bottom: 20px;
     color: #090909;
+}
+footer{
+    background-color: #090909;
+}
+.contact-bar{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+}
+.title-bar{
+    font-size: 19px;
+    color: #fff;
+    margin-right: 20px;
+}
+.contact-btn{
+    color: #000;
+    background-color: #fff;
+    padding-inline: 25px;
+}
+.select{
+    margin-bottom: 30px;
+}
+.select select{
+    color: #787878;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    cursor: pointer;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 20px;
+}
+.footer-links a{
+    color: #D9D9D9;
+    line-height: 35px;
+}
+@media only screen and (max-width: 768px){
+    nav{
+        width: 80.77%;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .button-section{
+        width: 100%;
+        padding: 30px 40px;
+        background-color: #D9D9D9;
+        position: absolute;
+        top: 13.3%;
+        right: 100%;
+        text-align: center;
+        transition: right 0.6s ease;
+    }
+    nav .buttons-container .first-btn{
+        color: #fff;
+        background-color: #000;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #button{
+        display: block;
+    }
+    .menu, .logo{display: block; margin: -10px;}
+    .show{
+        right: 0;
+    }
+    .search-title{
+        font-size: 26px;
+        position: absolute;
+        top: 13%;
+        left: 40px;
+    }
+    #search-form{
+        width: 90%;
+        position: absolute;
+        top: 20%;
+        left: 20px;
+        line-height: 20px;
+    }
+    .form-input{
+        width: 80%;
+        font-size: 15px;
+    }  
+    .signin-guide, .topics-categories, footer{
+        padding: 30px 5% 0;
+        border: none;
+    } 
+    .signin-guide a:nth-child(2){
+        margin-bottom: 30px;
+    }
+    .topic-item{
+        margin-bottom: 20px;
+    }
+    .topic-items{
+        display: block !important;
+    }   
+    .guide-title{
+        font-size: 18px;
+    }
+    .categories-items{
+        display: block !important;
+    }
+    .w-25{
+        width: 100% !important;
+    }
+    footer{
+        padding-bottom: 40px;
+    }
+    .title-bar {
+        font-size: 16px;
+    }
+    .contact-btn{
+        padding-inline: 20px;
+        font-size: 15px;
+    }
 }

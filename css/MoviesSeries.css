@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 :root {
+    --main-clr: #F5C518;
     --main-transition: 0.3s;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -54,6 +59,44 @@ li {
     transition: opacity 0.3s, visibility 0.3s;
     font-size: 13px;
     padding: 10px 0;
+}
+
+nav {
+    background-color: #121212;
+}
+nav .burger-menu {
+    cursor: pointer;
+}
+nav .container .sub-menu {
+    background-color: #121212;
+    position: absolute;
+    top: -600%; left: 7%;
+    z-index: 999;
+    min-width: 300px;
+    transition: var(--main-transition);
+}
+nav .container .sub-menu.active {
+    top: 100%;
+}
+nav .container .sub-menu ul {
+    width: 100%;
+    padding: 0;
+}
+nav .container .sub-menu ul li {
+    text-align: center;
+    color: #fff;
+    background-color: #121212;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+nav .container .sub-menu ul li a {
+    display: inline-block;
+    width: 100%;
+    padding-block: 18px;
+}
+nav .container .sub-menu ul li:hover {
+    background-color: #181818;
 }
 
 .movie:hover .movie-info {
