@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    --main-clr: #F5C518;
+    --main-transition: 0.3s;
+}
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    line-height: 1.5;
+    background-color: #000;
+}
+nav {
+    background-color: #121212;
+}
+p {
+    color: #fff;
+    /* font-size: clamp(.8rem, 5vw, .9rem); */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+ 
  #row1 {
     background: url(../img-about/noom-peerapong-2uwFEAGUm6E-unsplash.jpg);
     background-color: rgba(0, 0, 0, 0.5); 
