@@ -29,9 +29,6 @@ a {
 li {
     list-style: none;
 }
-<<<<<<< HEAD
- 
-=======
 nav .burger-menu {
   cursor: pointer;
 }
@@ -67,16 +64,11 @@ nav .container .sub-menu ul li a {
 nav .container .sub-menu ul li:hover {
   background-color: #181818;
 }
-/* ================================= end the nav ========================== */
-
-
-/* ========================= start the nav  ========================= */
 @media (max-width: 768px) {
   .w-sm-100 {
       width: 100%;
   }
 }
->>>>>>> about
  #row1 {
     background: url(../img-about/noom-peerapong-2uwFEAGUm6E-unsplash.jpg);
     background-color: rgba(0, 0, 0, 0.5); 
@@ -228,10 +220,6 @@ footer i {
 footer i:hover {
   transform: scale(1.3);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> about
 @keyframes slide {
   from {
       transform: translateX(0%);
