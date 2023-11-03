@@ -83,10 +83,14 @@ li {
     .swiper-button-next:after,.swiper-button-prev:after {
         display: none;
     }
+    .card {
+        flex-basis: calc(50% - 20px) !important;
+    }
     .pagination {
-        width: 70% !important;
+        width: 30% !important;
         margin: 10px auto;
     }
+
     .films{
         width: 70%;
     }
