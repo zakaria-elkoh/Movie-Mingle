@@ -113,7 +113,7 @@ nav .container .sub-menu {
     position: absolute;
     top: -600%; left: 7%;
     z-index: 999;
-    min-width: 350px;
+    min-width: 300px;
     transition: var(--main-transition);
 }
 nav .container .sub-menu.active {
