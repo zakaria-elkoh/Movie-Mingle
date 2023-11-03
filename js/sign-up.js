@@ -53,10 +53,10 @@ function setErrorFor(input, message){
     small.innerText = message;
 
     //add Error class
-    formControl.className = 'form-control error';
+    formControl.className = 'form-controls error';
 }
 function setSuccessFor(input){
     const formControl = input.parentElement;
     //add Error class
-    formControl.className = 'form-control success';
+    formControl.className = 'form-controls success';
 }

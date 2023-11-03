@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    padding: 10px 11%;
+}
+.branding-title{
+    border-left: 2px solid #F5C518;
+    color: #fff;
+}
+.button{
+    display: inline-flex;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.first-btn{
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 10px;
+}
+.second-btn{
+    background-color: #F5C518;
+    color: #000;
+}
+.global-content{
+    padding: 120px 0 30px;
+}
+.contactus-input-label{
+    font-size: 16px;
+    font-weight: 700;
+}
+.top-article{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+}
+.top-article a::before{
+    background: url(/Contact-images/arrow.png);
+    background-position: center center;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+footer{
+    padding: 20px;
+    background-color: #090909;
+}
+.contact-bar{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+}
+.title-bar{
+    font-size: 19px;
+    color: #fff;
+    margin-right: 20px;
+}
+.contact-btn{
+    color: #000;
+    background-color: #fff;
+    padding-inline: 25px;
+}
+.select{
+    margin-bottom: 30px;
+}
+.select select{
+    color: #787878;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    cursor: pointer;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 20px;
+}
+.footer-links a{
+    color: #D9D9D9;
+    line-height: 35px;
+}
+@media only screen and (max-width: 768px){
+    header{
+        padding: 14px 0;
+    }
+    .main-container{
+        padding: 10px 6%;
+    }
+    .logo-image{
+        width: 50px;
+        height: 50px;
+    }
+    .branding-title{
+        display: none;
+    }
+    .button-section{
+        width: 376px;
+        padding: 30px 40px;
+        background-color: #D9D9D9;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        transition: right 0.6s ease;
+        text-align: center;
+    }
+    .show{
+        right:0;
+    }
+    .menu{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+    .main-container .buttons-container .first-btn{
+        color: #fff;
+        background-color: #000;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #button{
+        display: block;
+    }
+    .main-container h1{
+        font-size: 26px;
+    }
+    .contactus-input-label{
+        font-weight: normal;
+    }
+    .contactus-form{
+        width: 100% !important;
+    }
+    .menu{display: block; margin: -10px;}
+    .title-bar {
+        font-size: 16px;
+    }
+    .contact-btn{
+        padding-inline: 20px;
+        font-size: 15px;
+    }
+}
