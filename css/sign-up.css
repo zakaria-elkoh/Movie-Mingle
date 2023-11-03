@@ -73,3 +73,9 @@ small{
 .signin-link{
     margin-top: 50px;
 }
+@media only screen and (max-width: 768px){
+    .sign-up-container{
+        width: 100%;
+        
+    }
+}
