@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-
 :root {
     --main-clr: #F5C518;
     --main-transition: 0.3s;
 }
-
-
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -20,7 +16,6 @@ nav {
 }
 p {
     color: #fff;
-    /* font-size: clamp(.8rem, 5vw, .9rem); */
 }
 a {
     text-decoration: none;
@@ -74,7 +69,7 @@ nav .container .sub-menu ul li:hover {
     background-color: rgba(0, 0, 0, 0.5); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    opacity: 0.8;
+    /* opacity: 0.8; */
     /* backdrop-filter: blur(10px);   */
 }
 .container .card {
@@ -84,7 +79,6 @@ nav .container .sub-menu ul li:hover {
   background-color : #262626;
   margin : 30px 10px;
   padding : 20px 15px;
-  
   display : flex;
   flex-direction : column;
   box-shadow : 0 5px 20px rgba(0,0,0,0.5);
@@ -107,6 +101,7 @@ nav .container .sub-menu ul li:hover {
 }
 
 .container .card .image img {
+  height: auto;
    width: 100%; 
   margin: auto;
   max-width : 100%;
