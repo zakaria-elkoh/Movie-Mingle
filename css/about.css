@@ -30,7 +30,7 @@ nav .burger-menu {
 nav .container .sub-menu {
   background-color: #121212;
   position: absolute;
-  top: -600%; left: 7%;
+  top: -1000%; left: 7%;
   z-index: 999;
   min-width: 350px;
   transition: var(--main-transition);
