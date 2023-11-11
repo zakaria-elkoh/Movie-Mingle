@@ -135,7 +135,10 @@ li {
 
     }
 
-    #swipers {
+    #swipers1 {
+        display: none;
+    }
+    #swipers2 {
         display: none;
     }
 
