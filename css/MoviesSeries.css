@@ -94,6 +94,7 @@ nav .container .sub-menu ul li a {
     display: inline-block;
     width: 100%;
     padding-block: 18px;
+    color: white;
 }
 nav .container .sub-menu ul li:hover {
     background-color: #181818;
