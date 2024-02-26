@@ -24,20 +24,39 @@
 </head>
 
 <body class=" bg-black">
-    <header>
-        <img src="img-dash/logo.png" alt="">
+    <nav>
+        <div class="container d-flex justify-content-between gap-md-3 gap-lg-5 align-items-center position-relative">
+            <div class="d-flex w-sm-100 align-items-center justify-content-between gap-3">
+                <div class="logo"><img class="img-fluid" src="./imgs/logo.png" alt="logo"></div>
+                <div class="menu"><i class="fa-solid fa-bars burger-menu fs-3 text-white"></i></div>
+            </div>
 
-        <div class="d-flex align-items-center gap-2">
-            <i class="text-white fa-solid fa-bars"></i>
-            <span class="text-white">Menu</span>
+
+            <div class="sub-menu d-flex w-25   justify-content-center">
+                <ul class="">
+                    <li><a class="text-capitalize" href="./contact.html">contact</a></li>
+                    <li><a class="text-capitalize" href="./dashboard.html">dashbord</a></li>
+                    <li><a class="text-capitalize" href="./about.html">about</a></li>
+                    <li><a class="text-capitalize" href="./sign-in.html">sign in</a></li>
+                    <li><a class="text-capitalize" href="./sign-up.html">sign up</a></li>
+                </ul>
+            </div>
+
+
+            <div class="search-wrapper flex-grow-1">
+                <input class="py-2 px-3 rounded-2 w-100 border-0 d-none d-md-block" type="text" placeholder="Search">
+            </div>
+            <div class="sign-in-wrapper d-flex align-items-center gap-3">
+                <a href="./MoviesSeries.html" class="fw-semibold text-white d-none d-md-block"> Watchlist</a>
+                <a href="./sign-in.html" class="fw-bold text-white d-none d-md-block">signIn</a>
+                <select class="form-select d-none d-md-block" aria-label="Default select example">
+                    <option selected>En</option>
+                    <option value="2">Fr</option>
+                    <option value="3">Sp</option>
+                </select>
+            </div>
         </div>
-        <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input type="text" placeholder="Search" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <span class="text-white">watchList</span>
-    </header>
+    </nav>
     <section class="container">
         <div class="row flex-nowrap">
             <!-- side nav -->
@@ -51,9 +70,9 @@
                         <li><a href="dashboard.html" class="text-decoration-none text-white px-4 py-2"><i
                                     class=" fa-solid fa-border-all"></i>
                                 <span class="d-none d-md-inline">Dashboard</span></a></li>
-                        <li><a href="favorite.html" class="text-decoration-none text-white px-4 py-2"><i
+                        <li><a href="favorite.html" class="text-decoration-none text-warning px-4 py-2"><i
                                     class=" fa-regular fa-heart"></i> <span
-                                    class="d-none d-md-inline">Favorite</span></a>
+                                    class="d-none d-md-inline text-warning">Favorite</span></a>
                         </li>
                         <li><a href="to-watch.html" class="text-decoration-none text-white px-4 py-2"><i
                                     class=" fa-regular fa-bookmark"></i>
@@ -64,7 +83,7 @@
                         <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
                                     class=" fa-regular fa-user"></i> <span class="d-none d-md-inline">Account</span></a>
                         </li>
-                        <li><a href="#" class="text-decoration-none text-white px-4 py-2"><i
+                        <li><a href="index.html" class="text-decoration-none text-white px-4 py-2"><i
                                     class=" fa-solid fa-arrow-right-from-bracket"></i> <span
                                     class="d-none d-md-inline">Log
                                     out</span></a></li>
@@ -84,31 +103,31 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="img-dash/417.jpeg" />
+                            <img src="img-dash/417.jpeg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/open.png" />
+                            <img src="img-dash/open.png" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/stranger.jpg" />
+                            <img src="img-dash/stranger.jpg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/raya.jpg" />
+                            <img src="img-dash/raya.jpg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/418.jpeg" />
+                            <img src="img-dash/418.jpeg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/Greatest.png" />
+                            <img src="img-dash/Greatest.png" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/avatar.png" />
+                            <img src="img-dash/avatar.png" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/kingdom.jpg" />
+                            <img src="img-dash/kingdom.jpg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img-dash/419.jpeg" />
+                            <img src="img-dash/419.jpeg" alt="" />
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -128,7 +147,7 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex flex-column gap-2">
+                                <div class="col-4 d-none d-md-flex flex-column gap-2">
                                     <div>
                                         <img  src="img-dash/anne.jpg" width="270" height="400" alt="">
                                     </div>
@@ -137,7 +156,7 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex flex-column gap-2">
+                                <div class="col-4 d-none d-md-flex flex-column gap-2">
                                     <div>
                                         <img class="image" src="img-dash/kingdom.jpg" width="270" height="400" alt="">
                                     </div>
@@ -159,7 +178,7 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex flex-column gap-2">
+                                <div class="col-4 d-none d-md-flex flex-column gap-2">
                                     <div>
                                         <img src="img-dash/raya.jpg" width="270" height="400" alt="">
                                     </div>
@@ -168,7 +187,7 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex flex-column gap-2">
+                                <div class="col-4 d-none d-md-flex flex-column gap-2">
                                     <div>
                                         <img src="img-dash/squid.png" width="270" height="400" alt="">
                                     </div>
@@ -190,7 +209,7 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex flex-column gap-2">
+                                <div class="col-4 d-none d-md-flex flex-column gap-2">
                                     <div>
                                         <img src="img-dash/stranger.jpg" width="270" height="400" alt="">
                                     </div>
@@ -199,7 +218,7 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex flex-column gap-2">
+                                <div class="col-4 d-none d-md-flex flex-column gap-2">
                                     <div>
                                         <img src="img-dash/417.jpeg" width="270" height="400" alt="">
                                     </div>
