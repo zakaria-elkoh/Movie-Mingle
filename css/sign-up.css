@@ -97,3 +97,144 @@ footer i:hover {
     width: 95%;
     }
 }
+
+
+
+
+
+
+
+p {
+    color: #fff;
+    /* font-size: clamp(.8rem, 5vw, .9rem); */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+
+
+/* ========================= start the componants  ========================= */
+.main-clr {
+    color: var(--main-clr);
+}
+.bg-main {
+    background-color: var(--main-clr);
+}
+.main-heading h1 {
+    color: var(--main-clr);
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2rem);
+}
+.main-heading h2 {
+    color: #fff;
+    padding: 0 0 0 15px;
+    text-transform: capitalize;
+    /* letter-spacing: -1.5px; */
+    font-weight: 600;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    position: relative;
+    cursor: pointer;
+}
+.main-heading h2::before {
+    content: "";
+    width: 4px;
+    height: 36px;
+    background-color: var(--main-clr);
+    border-radius: 20px;
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+.main-heading h2 i {
+    position: relative;
+    top: 2px; left: 6px;
+    transition: var(--main-transition);
+}
+.main-heading h2:hover i {
+    color: var(--main-clr);
+    left: 14px;
+}
+.swip-btn {
+    background-color: #121212;
+    border-radius: 4px;
+    padding: 30px 20px;
+    border: 2px solid #ffffff;
+}
+.w-33 {
+    width: 33%;
+}
+.gap-1-percent {
+    gap: 1%;
+}
+.w-32 {
+    width: 32%;
+}
+.flex-basis-33 {
+    flex-basis: 10%;
+}
+.fs-7 {
+    font-size: 0.875rem;
+}
+.letter-spacing-1 {
+    letter-spacing: 1.5px;
+}
+.bg-card {
+    background-color: #121212;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+/* =========================================================================== */
+
+/* ================================= start the nav ========================== */
+nav .burger-menu {
+    cursor: pointer;
+}
+nav .container .sub-menu {
+    background-color: #121212;
+    position: absolute;
+    top: -600%; left: 7%;
+    z-index: 999;
+    min-width: 300px;
+    transition: var(--main-transition);
+}
+nav .container .sub-menu.active {
+    top: 100%;
+}
+nav .container .sub-menu ul {
+    width: 100%;
+    padding: 0;
+}
+nav .container .sub-menu ul li {
+    text-align: center;
+    color: #fff;
+    background-color: #121212;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+nav .container .sub-menu ul li a {
+    display: inline-block;
+    width: 100%;
+    padding-block: 18px;
+    font-weight: semibold;
+}
+nav .container .sub-menu ul li:hover {
+    background-color: #181818;
+}
+/* ================================= end the nav ========================== */
+
+
+
+
+
+/* ========================= start the nav  ========================= */
+@media (max-width: 768px) {
+    .w-sm-100 {
+        width: 100%;
+    }
+}
